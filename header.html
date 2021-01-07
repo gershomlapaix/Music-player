@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Music</title>
+</head>
+
+<body>
+    <div class="player">
+
+        <img src="headPhone.svg" alt="Head phones" width="200px" height="100px">
+
+        <audio id="player">
+        <source id="source" />
+        Audio not supported
+    </audio>
+
+        <div id="controls">
+            <p id="currentSong">
+            </p>
+            <div class="controls_wrapper">
+                <span onclick="playAudio()">&#9658;</span>
+                <span onclick="pauseAudio()">&#10074;&#10074;</span>
+            </div>
+            <div class="volume">
+                Volume:
+                <span>-</span>
+                <input type="range" name="" id="volumeSlider" min="0" max="1" step="0.01">
+                <span>+</span>
+            </div>
+        </div>
+        <h2>Song list</h2>
+        <div id="songList">
+        </div>
+    </div>
+    <script src="work.js"></script>
+</body>
+
+</html>
